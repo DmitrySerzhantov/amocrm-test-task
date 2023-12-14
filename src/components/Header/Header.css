@@ -1,0 +1,139 @@
+.header {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
+  background: url('../../images/purple-ball.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 52vw;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  left: 35%;
+  bottom: 70%;
+  width: 250px;
+  height: 250px;
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833ab4;
+  filter: blur(196px);
+}
+.header__nav {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header__subtitle {
+  margin: 0;
+  color: #e4e5ea;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 300;
+  max-width: 140px;
+  text-align: start;
+}
+.header__nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+.header__link {
+  text-decoration: none;
+  color: #e4e5ea;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header__contacts {
+  display: flex;
+}
+.header__tel {
+  color: #e4e5ea;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  align-self: center;
+  text-wrap: nowrap;
+  font-style: normal;
+}
+.header__contacts-list {
+  list-style: none;
+  display: flex;
+  margin-left: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 30px;
+  align-self: center;
+}
+.header__contacts-telegram {
+  display: block;
+  background-image: url('../../images/telegram.svg');
+  background-repeat: no-repeat;
+  min-height: 20px;
+  min-width: 20px;
+}
+.header__contacts-viber {
+  display: block;
+  background-image: url('../../images/viber.svg');
+  background-repeat: no-repeat;
+  min-height: 20px;
+  min-width: 20px;
+}
+.header__contacts-whatsapp {
+  display: block;
+  background-image: url('../../images/whatsapp.svg');
+  background-repeat: no-repeat;
+  min-height: 20px;
+  min-width: 20px;
+}
+@media (max-width: 1280px) {
+  .header__tel {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .header__contacts {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header__item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .header__wrapper-logo {
+    display: none;
+  }
+  .header__nav {
+    margin: 0 auto;
+  }
+  .header__link {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    background-image: none;
+    padding: 0;
+    min-height: 55px;
+  }
+  .header::before {
+    display: none;
+  }
+  .header__nav-list {
+    gap: 15px;
+  }
+}

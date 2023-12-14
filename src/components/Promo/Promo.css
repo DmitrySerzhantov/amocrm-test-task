@@ -1,0 +1,217 @@
+.promo {
+  display: flex;
+  margin-top: 90px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.promo::before {
+  content: url('../../images/red-ball-1.png');
+  position: absolute;
+  z-index: -1;
+  bottom: 95%;
+  left: 35%;
+}
+.promo__title::before {
+  content: '';
+  position: absolute;
+  left: -150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 311px;
+  opacity: 0.5;
+  background: #961a1a;
+  filter: blur(196px);
+}
+.promo__titles {
+  padding-right: 10px;
+}
+.promo__title {
+  color: #e4e5ea;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
+  max-width: 360px;
+  text-align: start;
+  margin: 0;
+}
+.promo__subtitle {
+  color: transparent;
+  background: linear-gradient(90deg, #fcb045 20%, #ff3f78 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  text-align: start;
+}
+.promo__text {
+  color: #e4e5ea;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 0;
+  max-width: 270px;
+  text-align: start;
+}
+.promo__about-title {
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 290px;
+  margin: 0;
+  background: linear-gradient(90deg, #fcb045 36%, #fd1d1d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.promo__about-title-span {
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.promo__about-list {
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+.promo__about-item {
+  max-width: 135px;
+}
+.promo__about-subtitle {
+  margin: 0;
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.promo__about-text {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.promo__button {
+  margin-top: 60px;
+  background: #4077f3;
+  color: #e4e5ea;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 20px 35px;
+  border-style: none;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+.promo__button:hover {
+  box-shadow: 2px 1px 10px #4077f3;
+}
+.promo__button::before {
+  position: absolute;
+  bottom: -5px;
+  right: 30%;
+  z-index: -1;
+  content: url('../../images/red\ ball.png');
+}
+
+@media (max-width: 800px) {
+  .promo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo__about {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 600px) {
+  .promo__title {
+    font-size: 36px;
+  }
+  .promo__subtitle {
+    font-size: 36px;
+  }
+  .promo__about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .promo__about-text {
+    text-align: start;
+  }
+}
+@media (max-width: 480px) {
+  .promo::before {
+    display: none;
+  }
+  .promo {
+    align-items: flex-start;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    background-image: url('../../images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .promo__about-title {
+    text-align: start;
+  }
+  .promo__about-list {
+    margin-top: 20px;
+    gap: 14px;
+  }
+  .promo__about-subtitle::before {
+    display: flex;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+    align-self: center;
+    margin-right: 5px;
+  }
+  .promo__about-subtitle {
+    display: flex;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+  }
+  .promo__about-text {
+    display: none;
+  }
+  .promo__button {
+    display: none;
+  }
+}
