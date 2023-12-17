@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/amocrm-test-task/static/css/main.e1ca3f8c.css",
+    "main.css": "/amocrm-test-task/static/css/main.9b638ade.css",
     "main.js": "/amocrm-test-task/static/js/main.758189b0.js",
     "static/media/Inter-Black.eot": "/amocrm-test-task/static/media/Inter-Black.ede40fe6344ddd827039.eot",
     "static/media/Inter-Black.ttf": "/amocrm-test-task/static/media/Inter-Black.83d81b169bedf85385f2.ttf",
@@ -34,11 +34,11 @@
     "static/media/viber.svg": "/amocrm-test-task/static/media/viber.efdbe6bd3950a854df10.svg",
     "static/media/telegram.svg": "/amocrm-test-task/static/media/telegram.40ecd015eebebbe71b5b.svg",
     "index.html": "/amocrm-test-task/index.html",
-    "main.e1ca3f8c.css.map": "/amocrm-test-task/static/css/main.e1ca3f8c.css.map",
+    "main.9b638ade.css.map": "/amocrm-test-task/static/css/main.9b638ade.css.map",
     "main.758189b0.js.map": "/amocrm-test-task/static/js/main.758189b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1ca3f8c.css",
+    "static/css/main.9b638ade.css",
     "static/js/main.758189b0.js"
   ]
 }
